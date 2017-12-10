@@ -1,1 +1,1 @@
-# Laravel Validate Helper
+# Laravel Validatie Helper
