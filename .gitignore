@@ -1,5 +1,6 @@
 /.idea
 /.vscode
+/.php_cs.cache
 /vendor
 composer.lock
 *.sublime-project

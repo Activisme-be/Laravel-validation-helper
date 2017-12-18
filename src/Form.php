@@ -2,28 +2,28 @@
 
 namespace ActivismeBE\FormHelper;
 
-use Illuminate\Session\Store; 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Session\Store;
 
 /**
  * Class Form
  *
  * @package ActivismeBE\FormHelper
  */
-class Form 
+class Form
 {
     /**
      * @var \Illuminate\Database\Eloquent\Model
      */
-    protected $model; 
+    protected $model;
 
     /**
-     * @var \Illuminate\Session\Store 
+     * @var \Illuminate\Session\Store
      */
-    protected $session; 
+    protected $session;
 
     /**
-     * Form constructor. 
+     * Form constructor.
      *
      * @param \Illuminate\Session\Store $session
      */
@@ -32,9 +32,9 @@ class Form
         $this->session = $session;
     }
 
-    /** 
-     * Set the model to use for the current form. 
-     * 
+    /**
+     * Set the model to use for the current form.
+     *
      * @param \Illuminate\Database\Eloquent\Model|null $model
      */
     public function model(Model $model = null)
@@ -58,7 +58,7 @@ class Form
      * Get the attributes for an input field.
      *
      * @param  string       $name       The name for the input.
-     * @param  mixed|null   $default    The default value for the input. 
+     * @param  mixed|null   $default    The default value for the input.
      * @return string
      */
     public function input($name, $default = null)
@@ -71,7 +71,7 @@ class Form
     /**
      * Get the attributes for a checkbox.
      *
-     * @param  string   $name           The name for the checkbox 
+     * @param  string   $name           The name for the checkbox
      * @param  mixed    $inputValue     The value foàr the given input
      * @param  bool     $checkByDefault Determine iàf the value is checked or unchecked by default.
      * @return string
@@ -97,9 +97,9 @@ class Form
     /**
      * Get the attributes for a radio.
      *
-     * @param  string $name             The name for the radio box. 
-     * @param  mixed  $inputValue       The value for the input. 
-     * @param  bool   $checkByDefault   Determine if the value is checked or unchecked by default. 
+     * @param  string $name             The name for the radio box.
+     * @param  mixed  $inputValue       The value for the input.
+     * @param  bool   $checkByDefault   Determine if the value is checked or unchecked by default.
      * @return string
      */
     public function radio($name, $inputValue = 1, $checkByDefault = false)
@@ -111,9 +111,9 @@ class Form
      * Get the options for a select.
      *
      * @param  array        $options     The array with data for the options.
-     * @param  string       $name        The name for the option attribute. 
-     * @param  mixed|null   $default     The default value for the options. 
-     * @param  string|null  $placeholder The placeholder data for the option attribute. 
+     * @param  string       $name        The name for the option attribute.
+     * @param  mixed|null   $default     The default value for the options.
+     * @param  string|null  $placeholder The placeholder data for the option attribute.
      * @return string
      */
     public function options($options, $name, $default = null, $placeholder = null)
@@ -142,8 +142,8 @@ class Form
     /**
      * Get the error message if exists.
      *
-     * @param  string      $name     The name for the input field. 
-     * @param  string|null $template The template code for the error template. 
+     * @param  string      $name     The name for the input field.
+     * @param  string|null $template The template code for the error template.
      * @return string|null
      */
     public function error($name, $template = null)
@@ -161,7 +161,7 @@ class Form
     /**
      * Get the value to use in an input field.
      *
-     * @param  string     $name    The name for the name attribute. 
+     * @param  string     $name    The name for the name attribute.
      * @param  mixed|null $default The default input for the name attribute
      * @return mixed|null
      */
@@ -180,7 +180,7 @@ class Form
     /**
      * Get the value from old input.
      *
-     * @param  string $name The name for the old input. 
+     * @param  string $name The name for the old input.
      * @return mixed|null
      */
     protected function valueFromOld($name)
