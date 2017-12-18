@@ -45,8 +45,8 @@ class Form
     /**
      * Get the text for a textarea field.
      *
-     * @param  string $name
-     * @param  mixed|null $default
+     * @param  string       $name       THe name for the textarea
+     * @param  mixed|null   $default    The default value for the textarea
      * @return string
      */
     public function text($name, $default = null)
@@ -57,8 +57,8 @@ class Form
     /**
      * Get the attributes for an input field.
      *
-     * @param  string  $name
-     * @param  mixed|null  $default
+     * @param  string       $name       The name for the input.
+     * @param  mixed|null   $default    The default value for the input. 
      * @return string
      */
     public function input($name, $default = null)
@@ -71,9 +71,9 @@ class Form
     /**
      * Get the attributes for a checkbox.
      *
-     * @param  string $name
-     * @param  mixed $inputValue
-     * @param  bool $checkByDefault
+     * @param  string   $name           The name for the checkbox 
+     * @param  mixed    $inputValue     The value foàr the given input
+     * @param  bool     $checkByDefault Determine iàf the value is checked or unchecked by default.
      * @return string
      */
     public function checkbox($name, $inputValue = 1, $checkByDefault = false)
@@ -97,9 +97,9 @@ class Form
     /**
      * Get the attributes for a radio.
      *
-     * @param  string $name
-     * @param  mixed $inputValue
-     * @param  bool $checkByDefault
+     * @param  string $name             The name for the radio box. 
+     * @param  mixed  $inputValue       The value for the input. 
+     * @param  bool   $checkByDefault   Determine if the value is checked or unchecked by default. 
      * @return string
      */
     public function radio($name, $inputValue = 1, $checkByDefault = false)
@@ -110,10 +110,10 @@ class Form
     /**
      * Get the options for a select.
      *
-     * @param  array $options
-     * @param  string $name
-     * @param  mixed|null $default
-     * @param  string|null $placeholder
+     * @param  array        $options     The array with data for the options.
+     * @param  string       $name        The name for the option attribute. 
+     * @param  mixed|null   $default     The default value for the options. 
+     * @param  string|null  $placeholder The placeholder data for the option attribute. 
      * @return string
      */
     public function options($options, $name, $default = null, $placeholder = null)
@@ -142,8 +142,8 @@ class Form
     /**
      * Get the error message if exists.
      *
-     * @param  string $name
-     * @param  string|null $template
+     * @param  string      $name     The name for the input field. 
+     * @param  string|null $template The template code for the error template. 
      * @return string|null
      */
     public function error($name, $template = null)
@@ -161,8 +161,8 @@ class Form
     /**
      * Get the value to use in an input field.
      *
-     * @param  string $name
-     * @param  mixed|null $default
+     * @param  string     $name    The name for the name attribute. 
+     * @param  mixed|null $default The default input for the name attribute
      * @return mixed|null
      */
     public function value($name, $default = null)
@@ -180,7 +180,7 @@ class Form
     /**
      * Get the value from old input.
      *
-     * @param  string $name
+     * @param  string $name The name for the old input. 
      * @return mixed|null
      */
     protected function valueFromOld($name)
@@ -191,7 +191,7 @@ class Form
     /**
      * Get the value from the model.
      *
-     * @param  string $name
+     * @param  string $name The name for the model binding.
      * @return mixed|null
      */
     protected function valueFromModel($name)
