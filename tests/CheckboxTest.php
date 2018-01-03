@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class CheckboxTest extends TestCase
 {
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_valid_attributes()
     {
@@ -17,8 +17,8 @@ class CheckboxTest extends TestCase
         $this->assertBladeRender('name="accept" value="1" checked', "@checkbox('accept', 1, true)");
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_valid_attributes_when_the_model_does_not_have_the_attribute()
     {
@@ -31,8 +31,8 @@ class CheckboxTest extends TestCase
         $this->assertBladeRender('name="accept" value="ok"', '@form($model) @checkbox("accept", "ok")', $viewData);
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_valid_attributes_when_old_input_exists()
     {
@@ -42,8 +42,8 @@ class CheckboxTest extends TestCase
         $this->assertBladeRender('name="accept2" value="ok"', "@checkbox('accept2', 'ok')");
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_valid_attributes_when_old_input_and_model_exists()
     {
@@ -57,8 +57,8 @@ class CheckboxTest extends TestCase
         $this->assertBladeRender('name="accept" value="1" checked', '@form($model) @checkbox("accept")', $viewData);
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_valid_attributes_when_model_exists()
     {

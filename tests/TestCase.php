@@ -1,34 +1,34 @@
 <?php 
 
-use Illuminate\Support\Facades\File; 
+use ActivismeBE\FormHelper\FormServiceProvider;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\MessageBag;
-use Illuminate\Support\ViewErrorBag; 
-use ActivismeBE\FormHelper\FormServiceProvider; 
+use Illuminate\Support\ViewErrorBag;
 
 /**
- * Class TestCase 
+ * Class TestCase
  */
 class TestCase extends \Illuminate\Foundation\Testing\TestCase
 {
     /**
      * Setup the test environment
-     * 
+     *
      * @return void
      */
     protected function setUp()
     {
-        parent::setUp(); 
+        parent::setUp();
 
         app('Activisme_BE')->model(null);   // Unbind the model before each test
         $this->session(['errors' => null]); // Remove errors before each test
     }
 
     /**
-     * Creates the application. 
-     * 
+     * Creates the application.
+     *
      * @return \Illuminate\Foundation\Application
      */
-    public function createApplication() 
+    public function createApplication()
     {
         $app = require __DIR__.'/../vendor/laravel/laravel/bootstrap/app.php';
         $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();

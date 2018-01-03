@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\File;
 
 /**
  * Class ConfigTest
@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Artisan;
 class ConfigTest extends TestCase
 {
     /**
-     * @test 
+     * @test
      */
     public function config_file_is_published()
     {

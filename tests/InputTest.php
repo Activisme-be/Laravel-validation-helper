@@ -5,29 +5,29 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class InputTest
  */
-class InputTest extends TestCase 
+class InputTest extends TestCase
 {
     /**
-     * Combinations: 
-     * 
+     * Combinations:
+     *
      * -old and -model            = null/default
      * -old and +model/-attribute = null/default
      * +old and +model/+attribute = old
      * -old and +model/+attribute = model's attribute
      */
 
-    /** 
-     * @test 
-     */ 
-    public function it_generates_valid_attributes() 
+    /**
+     * @test
+     */
+    public function it_generates_valid_attributes()
     {
         $this->assertBladeRender('name="name" value=""', "@input('name')");
         $this->assertBladeRender('name="name" value="default"', "@input('name', 'default')");
     }
 
     /**
-     *  @test 
-     */ 
+     *  @test
+     */
     public function it_generates_valid_attributes_when_the_model_does_not_have_the_attribute()
     {
         $model = $this->prophesize(Model::class);
@@ -39,8 +39,8 @@ class InputTest extends TestCase
         $this->assertBladeRender('name="name" value="default"', '@form($model) @input("name", "default")', $viewData);
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_valid_attributes_when_old_input_exists()
     {
@@ -48,8 +48,8 @@ class InputTest extends TestCase
         $this->assertBladeRender('name="name" value="Old John Doe"', "@input('name')");
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_valid_attributes_when_old_input_and_model_exists()
     {
@@ -62,8 +62,8 @@ class InputTest extends TestCase
         $this->assertBladeRender('name="name" value="Old John Doe"', '@form($model) @input("name")', $viewData);
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_valid_attributes_when_model_exists()
     {

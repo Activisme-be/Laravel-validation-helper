@@ -1,29 +1,29 @@
 <?php 
 
-use ActivismeBE\FormHelper\Form; 
+use ActivismeBE\FormHelper\Form;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class OptionsTest
  */
-class OptionsTest extends TestCase 
+class OptionsTest extends TestCase
 {
     /**
-     * @test 
-     */ 
-    public function it_generates_options() 
+     * @test
+     */
+    public function it_generates_options()
     {
         $viewData = [
             'options' => [
-                'option_a' => 'Option A', 
+                'option_a' => 'Option A',
                 'option_b' => 'Option B',
-            ], 
+            ],
             'default' => ['option_a', 'option_b']
         ];
 
-        // No selected option 
-        $html  = '<option value="option_a">Option A</option>'; 
-        $html .= '<option value="option_b">Option B</option>'; 
+        // No selected option
+        $html  = '<option value="option_a">Option A</option>';
+        $html .= '<option value="option_b">Option B</option>';
 
         $this->assertBladeRender($html, '@options($options, "select")', $viewData);
 
@@ -40,30 +40,30 @@ class OptionsTest extends TestCase
         $this->assertBladeRender($html, '@options($options, "select", $default)', $viewData);
     }
 
-    /** 
-     * @test 
-     */ 
-    public function it_generates_options_with_placeholder() 
-    { 
-        $viewData = ['options' => ['option_value' => 'Option Text']]; 
+    /**
+     * @test
+     */
+    public function it_generates_options_with_placeholder()
+    {
+        $viewData = ['options' => ['option_value' => 'Option Text']];
 
-        $html  = '<option value="" selected disabled>Placeholder</option>'; 
+        $html  = '<option value="" selected disabled>Placeholder</option>';
         $html .= '<option value="option_value">Option Text</option>';
 
         $this->assertBladeRender($html, '@options($options, "select", null, "Placeholder")', $viewData);
     }
 
-    /** 
-     * @test 
-     */ 
+    /**
+     * @test
+     */
     public function it_generates_option_when_the_model_does_not_have_the_attribute()
     {
-        $model = $this->prophesize(Model::class); 
+        $model = $this->prophesize(Model::class);
         $model->getAttribute('select')->willReturn(null);
 
         $viewData = [
             'model'   => $model->reveal(),
-            'default' => ['option_a', 'option_b'], 
+            'default' => ['option_a', 'option_b'],
             'options' => [
                 'option_a' => 'Option A',
                 'option_b' => 'Option B',
@@ -89,8 +89,8 @@ class OptionsTest extends TestCase
         $this->assertBladeRender($html, '@form($model) @options($options, "select", $default)', $viewData);
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_options_when_the_model_exists()
     {
@@ -122,8 +122,8 @@ class OptionsTest extends TestCase
         $this->assertBladeRender($html, '@form($model) @options($options, "select_multiple")', $viewData);
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_options_when_old_input_and_the_model_exists()
     {
@@ -142,8 +142,8 @@ class OptionsTest extends TestCase
         $this->assertBladeRender($html, '@form($model) @options($options, "select", "default_value")', $viewData);
     }
 
-    /** 
-     * @test 
+    /**
+     * @test
      */
     public function it_generates_options_when_old_input_exists()
     {
