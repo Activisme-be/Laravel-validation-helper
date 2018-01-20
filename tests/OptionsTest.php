@@ -10,8 +10,9 @@ class OptionsTest extends TestCase
 {
     /**
      * @test
+     * @testdox It generates options
      */
-    public function it_generates_options()
+    public function it_generates_options(): void
     {
         $viewData = [
             'options' => [
@@ -42,8 +43,9 @@ class OptionsTest extends TestCase
 
     /**
      * @test
+     * @testdox It generates options with placeholder
      */
-    public function it_generates_options_with_placeholder()
+    public function it_generates_options_with_placeholder(): void
     {
         $viewData = ['options' => ['option_value' => 'Option Text']];
 
@@ -55,8 +57,9 @@ class OptionsTest extends TestCase
 
     /**
      * @test
+     * @testdox It generates option when the model does not have the attribute
      */
-    public function it_generates_option_when_the_model_does_not_have_the_attribute()
+    public function it_generates_option_when_the_model_does_not_have_the_attribute(): void
     {
         $model = $this->prophesize(Model::class);
         $model->getAttribute('select')->willReturn(null);
@@ -91,8 +94,9 @@ class OptionsTest extends TestCase
 
     /**
      * @test
+     * @testdox It generate options when the model exists
      */
-    public function it_generates_options_when_the_model_exists()
+    public function it_generates_options_when_the_model_exists(): void
     {
         $model = $this->prophesize(Model::class);
         $model->getAttribute('select')->willReturn('option_b');
@@ -124,8 +128,9 @@ class OptionsTest extends TestCase
 
     /**
      * @test
+     * @testdox It generates options when old input and the model exists
      */
-    public function it_generates_options_when_old_input_and_the_model_exists()
+    public function it_generates_options_when_old_input_and_the_model_exists(): void
     {
         $model = $this->prophesize(Model::class);
         $model->getAttribute('select')->willReturn('model_option_value');
@@ -144,8 +149,9 @@ class OptionsTest extends TestCase
 
     /**
      * @test
+     * @testdox It generates options when old input exists
      */
-    public function it_generates_options_when_old_input_exists()
+    public function it_generates_options_when_old_input_exists(): void
     {
         $viewData = ['options' => ['option_value' => 'Option Text']];
         $this->session(['_old_input' => ['select' => 'option_value']]);
