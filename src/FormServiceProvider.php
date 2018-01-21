@@ -61,7 +61,7 @@ class FormServiceProvider extends ServiceProvider
      */
     protected function registerBindings(): void
     {
-        $this->app->singleton('Activisme_BE', function (): object {
+        $this->app->singleton('Activisme_BE', function (): Form {
             return $this->app->make(Form::class);
         });
     }
