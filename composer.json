@@ -1,5 +1,5 @@
 {
-    "name": "activismebe/laravel-form-helpsers", 
+    "name": "activismebe/laravel-form-helpers", 
     "description": "Handle form model bind, old input and validation error messages in a clean easy way.",
     "keywords": ["laravel", "form", "html", "eloquent", "input", "validation", "session", "helpers"], 
     "license": "MIT", 
