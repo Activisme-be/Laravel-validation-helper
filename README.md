@@ -113,7 +113,7 @@ This will result in the following markup:
 Use the `@text` directive to assign the value to a textarea field:
 
 ```blade
-<textarea name="description">@text('description')</textareas>
+<textarea name="description">@text('description')</textarea>
 <textarea name="bio">@text('bio', 'Default')</textareas>
 ```
 
