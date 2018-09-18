@@ -49,7 +49,7 @@ class Form
      * @param  mixed|null   $default    The default value for the textarea
      * @return string
      */
-    public function text($name, $default = null)
+    public function text(string $name, $default = null)
     {
         return e($this->value($name, $default));
     }
@@ -61,7 +61,7 @@ class Form
      * @param  mixed|null   $default    The default value for the input.
      * @return string
      */
-    public function input($name, $default = null)
+    public function input(string $name, $default = null)
     {
         $value = e($this->value($name, $default));
         $name = e($name);
@@ -76,7 +76,7 @@ class Form
      * @param  bool     $checkByDefault Determine iàf the value is checked or unchecked by default.
      * @return string
      */
-    public function checkbox($name, $inputValue = 1, $checkByDefault = false)
+    public function checkbox(string $name, $inputValue = 1, bool $checkByDefault = false)
     {
         $value = $this->value($name);
         // Define the state for the checkbox, when $value is null then we
@@ -102,7 +102,7 @@ class Form
      * @param  bool   $checkByDefault   Determine if the value is checked or unchecked by default.
      * @return string
      */
-    public function radio($name, $inputValue = 1, $checkByDefault = false)
+    public function radio(string $name, $inputValue = 1, bool $checkByDefault = false)
     {
         return $this->checkbox($name, $inputValue, $checkByDefault);
     }
@@ -116,7 +116,7 @@ class Form
      * @param  string|null  $placeholder The placeholder data for the option attribute.
      * @return string
      */
-    public function options($options, $name, $default = null, $placeholder = null)
+    public function options(array $options, string $name, $default = null, ?string $placeholder = null)
     {
         $tags = [];
         // Prepend the placeholder to the options list if needed.
@@ -146,7 +146,7 @@ class Form
      * @param  string|null $template The template code for the error template.
      * @return string|null
      */
-    public function error($name, $template = null)
+    public function error(string $name, ?string $template = null)
     {
         $errors = $this->session->get('errors');
         // Default template is bootstrap friendly.
@@ -165,7 +165,7 @@ class Form
      * @param  mixed|null $default The default input for the name attribute
      * @return mixed|null
      */
-    public function value($name, $default = null)
+    public function value(string $name, $default = null)
     {
         if (! is_null($value = $this->valueFromOld($name))) {
             return $value;
@@ -183,7 +183,7 @@ class Form
      * @param  string $name The name for the old input.
      * @return mixed|null
      */
-    protected function valueFromOld($name)
+    protected function valueFromOld(string $name)
     {
         return $this->session->getOldInput($name);
     }
@@ -194,7 +194,7 @@ class Form
      * @param  string $name The name for the model binding.
      * @return mixed|null
      */
-    protected function valueFromModel($name)
+    protected function valueFromModel(string $name)
     {
         if (! $this->model) {
             return null;
