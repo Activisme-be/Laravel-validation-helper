@@ -1,6 +1,5 @@
-<?php 
+<?php
 
-use ActivismeBE\FormHelper\Form;
 use Illuminate\Database\Eloquent\Model;
 
 /**
