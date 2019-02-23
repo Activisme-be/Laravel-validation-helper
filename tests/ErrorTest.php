@@ -21,7 +21,7 @@ class ErrorTest extends TestCase
     public function display_error(): void
     {
         $this->withError('field', 'Error Message');
-        $this->assertBladeRender('<div class="help-block">Error Message</div>', '@error("field")');
+        $this->assertBladeRender('<div class="invalid-feedback">Error Message</div>', '@error("field")');
     }
 
     /**
@@ -58,6 +58,6 @@ class ErrorTest extends TestCase
     public function escape_error(): void
     {
         $this->withError('field_name', '<html>');
-        $this->assertBladeRender('<div class="help-block">&lt;html&gt;</div>', '@error("field_name")');
+        $this->assertBladeRender('<div class="invalid-feedback">&lt;html&gt;</div>', '@error("field_name")');
     }
 }
