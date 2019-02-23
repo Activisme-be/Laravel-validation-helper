@@ -46,7 +46,7 @@ Installation
 Install with composer, just run the command:
 
 ```sh
-composer require sahibalejandro/laravel-form-helpers
+composer require actb/laravel-form-helpers
 ```
 
 Then add the service provider to your `config/app.php` file:
