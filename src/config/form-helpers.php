@@ -14,5 +14,5 @@ return [
      *
      */
     
-    'error_template' => '<div class="help-block">:message</div>',
+    'error_template' => '<div class="invalid-feedback">:message</div>',
 ];
