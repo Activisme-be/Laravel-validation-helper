@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 use ActivismeBE\FormHelper\FormServiceProvider;
 use Illuminate\Support\Facades\File;
