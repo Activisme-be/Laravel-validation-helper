@@ -53,7 +53,7 @@ Then add the service provider to your `config/app.php` file:
 
 ```php
 'providers' => [
-    Sahib\Form\FormServiceProvider::class,
+    ActivismeBE\FormHelper\FormServiceProvider::class,
 ];
 ```
 
@@ -65,7 +65,7 @@ Configuration
 Optionally you can publish the configuration file with this command:
 
 ~~~sh
-php artisan vendor:publish --provider=Sahib\Form\FormServiceProvider
+php artisan vendor:publish --provider=ActivismeBE\FormHelper\FormServiceProvider
 ~~~
 
 After that you can edit the `config/form-helpers.php` file.
