@@ -15,7 +15,7 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
      *
      * @return void
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -33,7 +33,7 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
         $app = require __DIR__.'/../vendor/laravel/laravel/bootstrap/app.php';
         $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
         $app->register(FormServiceProvider::class);
-        
+
         return $app;
     }
 
@@ -50,7 +50,7 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
         $path = __DIR__."/views/test.blade.php";
         File::put($path, $string);
         $this->assertEquals($render, view()->file($path, $data)->render());
-        
+
         return $this;
     }
 
