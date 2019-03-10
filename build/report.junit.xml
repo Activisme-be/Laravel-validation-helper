@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Misfits Test Suite" tests="35" assertions="55" errors="0" failures="0" skipped="0" time="0.944055">
+    <testsuite name="CheckboxTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\CheckboxTest.php" tests="5" assertions="10" errors="0" failures="0" skipped="0" time="0.272796">
+      <testcase name="it_generates_valid_attributes" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\CheckboxTest.php" line="14" assertions="3" time="0.132757"/>
+      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\CheckboxTest.php" line="25" assertions="2" time="0.057382"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\CheckboxTest.php" line="40" assertions="2" time="0.023211"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\CheckboxTest.php" line="52" assertions="1" time="0.022704"/>
+      <testcase name="it_generates_valid_attributes_when_model_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\CheckboxTest.php" line="68" assertions="2" time="0.036742"/>
+    </testsuite>
+    <testsuite name="ConfigTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ConfigTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.076072">
+      <testcase name="config_file_is_published" class="ConfigTest" classname="ConfigTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ConfigTest.php" line="15" assertions="2" time="0.076072"/>
+    </testsuite>
+    <testsuite name="ErrorTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ErrorTest.php" tests="5" assertions="6" errors="0" failures="0" skipped="0" time="0.078938">
+      <testcase name="do_not_display_error_when_there_is_no_errors" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ErrorTest.php" line="12" assertions="1" time="0.013679"/>
+      <testcase name="display_error" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ErrorTest.php" line="21" assertions="1" time="0.015989"/>
+      <testcase name="display_error_with_custom_template" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ErrorTest.php" line="31" assertions="2" time="0.022634"/>
+      <testcase name="display_error_with_custom_template_defined_in_config" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ErrorTest.php" line="43" assertions="1" time="0.013376"/>
+      <testcase name="escape_error" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ErrorTest.php" line="58" assertions="1" time="0.013260"/>
+    </testsuite>
+    <testsuite name="EscapeValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\EscapeValueTest.php" tests="5" assertions="5" errors="0" failures="0" skipped="0" time="0.077548">
+      <testcase name="escape_value_for_an_input_field" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\EscapeValueTest.php" line="12" assertions="1" time="0.013753"/>
+      <testcase name="escape_value_for_a_textarea" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\EscapeValueTest.php" line="21" assertions="1" time="0.016221"/>
+      <testcase name="escape_value_for_a_checkbox" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\EscapeValueTest.php" line="30" assertions="1" time="0.016410"/>
+      <testcase name="escape_value_for_a_radio_button" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\EscapeValueTest.php" line="39" assertions="1" time="0.015410"/>
+      <testcase name="escape_value_for_an_option" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\EscapeValueTest.php" line="48" assertions="1" time="0.015754"/>
+    </testsuite>
+    <testsuite name="InputTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\InputTest.php" tests="5" assertions="7" errors="0" failures="0" skipped="0" time="0.120865">
+      <testcase name="it_generates_valid_attributes" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\InputTest.php" line="23" assertions="2" time="0.023981"/>
+      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\InputTest.php" line="33" assertions="2" time="0.031540"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\InputTest.php" line="48" assertions="1" time="0.016504"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\InputTest.php" line="58" assertions="1" time="0.025056"/>
+      <testcase name="it_generates_valid_attributes_when_model_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\InputTest.php" line="73" assertions="1" time="0.023784"/>
+    </testsuite>
+    <testsuite name="OptionsTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\OptionsTest.php" tests="6" assertions="14" errors="0" failures="0" skipped="0" time="0.169429">
+      <testcase name="it_generates_options" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\OptionsTest.php" line="14" assertions="3" time="0.032630"/>
+      <testcase name="it_generates_options_with_placeholder" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\OptionsTest.php" line="47" assertions="1" time="0.013815"/>
+      <testcase name="it_generates_option_when_the_model_does_not_have_the_attribute" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\OptionsTest.php" line="61" assertions="3" time="0.036298"/>
+      <testcase name="it_generates_options_when_the_model_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\OptionsTest.php" line="98" assertions="3" time="0.035457"/>
+      <testcase name="it_generates_options_when_old_input_and_the_model_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\OptionsTest.php" line="132" assertions="2" time="0.029613"/>
+      <testcase name="it_generates_options_when_old_input_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\OptionsTest.php" line="153" assertions="2" time="0.021616"/>
+    </testsuite>
+    <testsuite name="TextTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\TextTest.php" tests="5" assertions="8" errors="0" failures="0" skipped="0" time="0.119479">
+      <testcase name="it_generates_valid_attributes" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\TextTest.php" line="14" assertions="2" time="0.020573"/>
+      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\TextTest.php" line="25" assertions="3" time="0.038597"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\TextTest.php" line="41" assertions="1" time="0.015228"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\TextTest.php" line="51" assertions="1" time="0.024069"/>
+      <testcase name="it_generates_valid_attributes_when_model_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\TextTest.php" line="66" assertions="1" time="0.021012"/>
+    </testsuite>
+    <testsuite name="ValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ValueTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.028928">
+      <testcase name="value_method_returns_session_empty_values" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ValueTest.php" line="14" assertions="1" time="0.008098"/>
+      <testcase name="value_method_returns_model_empty_values" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ValueTest.php" line="26" assertions="1" time="0.013656"/>
+      <testcase name="value_method_returns_default_value" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\Laravel-validation-helper\tests\ValueTest.php" line="41" assertions="1" time="0.007174"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

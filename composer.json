@@ -1,11 +1,11 @@
 {
-    "name": "actb/laravel-form-helpers", 
+    "name": "actb/laravel-form-helpers",
     "description": "Handle form model bind, old input and validation error messages in a clean easy way.",
-    "keywords": ["laravel", "form", "html", "eloquent", "input", "validation", "session", "helpers"], 
-    "license": "MIT", 
+    "keywords": ["laravel", "form", "html", "eloquent", "input", "validation", "session", "helpers"],
+    "license": "MIT",
     "author": [
         {
-            "name": "Tim Joosten", 
+            "name": "Tim Joosten",
             "email": "Tim@activisme.be"
         }
     ],
@@ -13,7 +13,7 @@
         "psr-4": {
             "ActivismeBE\\FormHelper\\": "src/"
         }
-    }, 
+    },
     "autoload-dev": {
         "classmap": [
             "tests/TestCase.php"
@@ -31,11 +31,11 @@
         ]
     },
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~6.0",
-        "laravel/laravel": "~5.4|~5.5|~5.6",
+        "phpunit/phpunit": "~8.0",
+        "laravel/laravel": "~5.8",
         "friendsofphp/php-cs-fixer": "^2.9",
         "sensiolabs/security-checker": "^4.1"
     },
