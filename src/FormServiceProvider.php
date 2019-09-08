@@ -3,6 +3,7 @@
 namespace ActivismeBE\FormHelper;
 
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Str;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -118,6 +119,6 @@ class FormServiceProvider extends ServiceProvider
      */
     protected function addParenthesis(string $expression): string
     {
-        return starts_with($expression, '(') ? $expression : "($expression)";
+        return Str::startsWith($expression, '(') ? $expression : "($expression)";
     }
 }
