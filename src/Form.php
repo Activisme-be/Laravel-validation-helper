@@ -61,6 +61,7 @@ class Form
     {
         $value = e($this->value($name, $default));
         $name = e($name);
+
         return "name=\"$name\" value=\"$value\"";
     }
 
@@ -84,6 +85,7 @@ class Form
         $name = e($name);
         $inputValue = e($inputValue);
         $checked = $checked ? ' checked' : '';
+
         return "name=\"$name\" value=\"$inputValue\"$checked";
     }
 
@@ -113,10 +115,13 @@ class Form
     {
         $tags = [];
         // Prepend the placeholder to the options list if needed.
+
         if ($placeholder) {
             $tags[] = '<option value="" selected disabled>'.e($placeholder).'</option>';
         }
+
         $value = $this->value($name, $default);
+
         // Cast $default and $value to an array in order to support selects with
         // multiple options selected.
         if (! is_array($value)) {
@@ -124,7 +129,7 @@ class Form
         }
 
         foreach ($options as $key => $text) {
-            $selected = in_array($key, $value) ? ' selected' : '';
+            $selected = in_array($key, $value, true) ? ' selected' : '';
             $key = e($key);
             $text = e($text);
             $tags[] = "<option value=\"$key\"$selected>$text</option>";
@@ -143,7 +148,7 @@ class Form
     {
         $errors = $this->session->get('errors');
         // Default template is bootstrap friendly.
-        if (is_null($template)) {
+        if ($template === null) {
             $template = config('form-helpers.error_template');
         }
         if ($errors && $errors->has($name)) {
@@ -160,13 +165,14 @@ class Form
      */
     public function value($name, $default = null)
     {
-        if (! is_null($value = $this->valueFromOld($name))) {
+        if (($value = $this->valueFromOld($name)) !== null) {
             return $value;
         }
 
-        if (! is_null($value = $this->valueFromModel($name))) {
+        if (($value = $this->valueFromModel($name)) !== null) {
             return $value;
         }
+
         return $default;
     }
 
