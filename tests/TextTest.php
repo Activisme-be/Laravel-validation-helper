@@ -9,7 +9,7 @@ class TextTest extends TestCase
 {
     /**
      * @test
-     * @testdox 0It generates valid attributes
+     * @testdox It generates valid attributes
      */
     public function it_generates_valid_attributes(): void
     {
@@ -28,7 +28,7 @@ class TextTest extends TestCase
         $model->getAttribute('description')->willReturn(null);
 
         $viewData = ['model' => $model->reveal()];
-        
+
         $this->assertBladeRender('', '@form($model) @text("description")', $viewData);
         $this->assertBladeRender('default', '@form($model) @text("description", "default")', $viewData);
         $this->assertBladeRender('', '');
@@ -67,7 +67,7 @@ class TextTest extends TestCase
     {
         $model = $this->prophesize(Model::class);
         $model->getAttribute('description')->willReturn('Description');
-        
+
         $viewData = ['model' => $model->reveal()];
         $this->assertBladeRender('Description', '@form($model) @text("description")', $viewData);
     }
