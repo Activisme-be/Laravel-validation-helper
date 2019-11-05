@@ -68,7 +68,7 @@ class Form
      * Get the attributes for a checkbox.
      *
      * @param  string   $name           The name for the checkbox
-     * @param  mixed    $inputValue     The value foàr the given input
+     * @param  mixed    $inputValue     The value for the given input
      * @param  bool     $checkByDefault Determine iàf the value is checked or unchecked by default.
      * @return string
      */
