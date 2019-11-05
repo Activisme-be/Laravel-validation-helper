@@ -1,5 +1,6 @@
 <?php
 
+use ActivismeBE\FormHelper\FormServiceProvider;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 
@@ -18,9 +19,7 @@ class ConfigTest extends TestCase
         File::delete($configFile);
 
         $this->assertFileNotExists($configFile);
-        Artisan::call('vendor:publish', [
-            '--provider' => 'ActivismeBE\FormHelper\FormServiceProvider',
-        ]);
+        Artisan::call('vendor:publish', ['--provider' => FormServiceProvider::class]);
 
         $this->assertFileExists($configFile);
     }
