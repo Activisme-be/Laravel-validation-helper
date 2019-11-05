@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Misfits Test Suite" tests="35" assertions="55" errors="0" warnings="0" failures="0" skipped="0" time="0.953722">
-    <testsuite name="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" tests="5" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.225495">
-      <testcase name="it_generates_valid_attributes" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="14" assertions="3" time="0.115882"/>
-      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="25" assertions="2" time="0.044939"/>
-      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="40" assertions="2" time="0.017230"/>
-      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="52" assertions="1" time="0.019941"/>
-      <testcase name="it_generates_valid_attributes_when_model_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="68" assertions="2" time="0.027503"/>
+  <testsuite name="Misfits Test Suite" tests="35" assertions="55" errors="0" warnings="0" failures="0" skipped="0" time="0.936596">
+    <testsuite name="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" tests="5" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.244129">
+      <testcase name="it_generates_valid_attributes" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="14" assertions="3" time="0.123042"/>
+      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="25" assertions="2" time="0.051606"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="40" assertions="2" time="0.017729"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="52" assertions="1" time="0.022555"/>
+      <testcase name="it_generates_valid_attributes_when_model_exists" class="CheckboxTest" classname="CheckboxTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\CheckboxTest.php" line="68" assertions="2" time="0.029197"/>
     </testsuite>
-    <testsuite name="ConfigTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ConfigTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.112638">
-      <testcase name="config_file_is_published" class="ConfigTest" classname="ConfigTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ConfigTest.php" line="16" assertions="2" time="0.112638"/>
+    <testsuite name="ConfigTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ConfigTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.116068">
+      <testcase name="config_file_is_published" class="ConfigTest" classname="ConfigTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ConfigTest.php" line="16" assertions="2" time="0.116068"/>
     </testsuite>
-    <testsuite name="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" tests="5" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.072247">
-      <testcase name="do_not_display_error_when_there_is_no_errors" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="12" assertions="1" time="0.016702"/>
-      <testcase name="display_error" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="21" assertions="1" time="0.013144"/>
-      <testcase name="display_error_with_custom_template" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="31" assertions="2" time="0.018060"/>
-      <testcase name="display_error_with_custom_template_defined_in_config" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="43" assertions="1" time="0.012035"/>
-      <testcase name="escape_error" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="58" assertions="1" time="0.012306"/>
+    <testsuite name="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" tests="5" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.078634">
+      <testcase name="do_not_display_error_when_there_is_no_errors" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="12" assertions="1" time="0.014968"/>
+      <testcase name="display_error" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="21" assertions="1" time="0.013839"/>
+      <testcase name="display_error_with_custom_template" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="31" assertions="2" time="0.019529"/>
+      <testcase name="display_error_with_custom_template_defined_in_config" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="43" assertions="1" time="0.014580"/>
+      <testcase name="escape_error" class="ErrorTest" classname="ErrorTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ErrorTest.php" line="58" assertions="1" time="0.015718"/>
     </testsuite>
-    <testsuite name="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" tests="5" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.065766">
-      <testcase name="escape_value_for_an_input_field" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="12" assertions="1" time="0.012958"/>
-      <testcase name="escape_value_for_a_textarea" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="21" assertions="1" time="0.012664"/>
-      <testcase name="escape_value_for_a_checkbox" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="30" assertions="1" time="0.013270"/>
-      <testcase name="escape_value_for_a_radio_button" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="39" assertions="1" time="0.012314"/>
-      <testcase name="escape_value_for_an_option" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="48" assertions="1" time="0.014560"/>
+    <testsuite name="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" tests="5" assertions="5" errors="0" warnings="0" failures="0" skipped="0" time="0.072939">
+      <testcase name="escape_value_for_an_input_field" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="12" assertions="1" time="0.014445"/>
+      <testcase name="escape_value_for_a_textarea" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="21" assertions="1" time="0.015002"/>
+      <testcase name="escape_value_for_a_checkbox" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="30" assertions="1" time="0.012146"/>
+      <testcase name="escape_value_for_a_radio_button" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="39" assertions="1" time="0.015257"/>
+      <testcase name="escape_value_for_an_option" class="EscapeValueTest" classname="EscapeValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\EscapeValueTest.php" line="48" assertions="1" time="0.016089"/>
     </testsuite>
-    <testsuite name="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" tests="5" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.113347">
-      <testcase name="it_generates_valid_attributes" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="23" assertions="2" time="0.018969"/>
-      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="33" assertions="2" time="0.029127"/>
-      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="48" assertions="1" time="0.014195"/>
-      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="58" assertions="1" time="0.028662"/>
-      <testcase name="it_generates_valid_attributes_when_model_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="73" assertions="1" time="0.022394"/>
+    <testsuite name="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" tests="5" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.103851">
+      <testcase name="it_generates_valid_attributes" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="23" assertions="2" time="0.018451"/>
+      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="33" assertions="2" time="0.027448"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="48" assertions="1" time="0.014525"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="58" assertions="1" time="0.021840"/>
+      <testcase name="it_generates_valid_attributes_when_model_exists" class="InputTest" classname="InputTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\InputTest.php" line="73" assertions="1" time="0.021587"/>
     </testsuite>
-    <testsuite name="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" tests="6" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="0.174791">
-      <testcase name="it_generates_options" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="14" assertions="3" time="0.027737"/>
-      <testcase name="it_generates_options_with_placeholder" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="47" assertions="1" time="0.012489"/>
-      <testcase name="it_generates_option_when_the_model_does_not_have_the_attribute" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="61" assertions="3" time="0.039773"/>
-      <testcase name="it_generates_options_when_the_model_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="98" assertions="3" time="0.038782"/>
-      <testcase name="it_generates_options_when_old_input_and_the_model_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="132" assertions="2" time="0.034248"/>
-      <testcase name="it_generates_options_when_old_input_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="153" assertions="2" time="0.021762"/>
+    <testsuite name="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" tests="6" assertions="14" errors="0" warnings="0" failures="0" skipped="0" time="0.166894">
+      <testcase name="it_generates_options" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="14" assertions="3" time="0.022458"/>
+      <testcase name="it_generates_options_with_placeholder" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="47" assertions="1" time="0.013065"/>
+      <testcase name="it_generates_option_when_the_model_does_not_have_the_attribute" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="61" assertions="3" time="0.041587"/>
+      <testcase name="it_generates_options_when_the_model_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="98" assertions="3" time="0.041769"/>
+      <testcase name="it_generates_options_when_old_input_and_the_model_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="132" assertions="2" time="0.027353"/>
+      <testcase name="it_generates_options_when_old_input_exists" class="OptionsTest" classname="OptionsTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\OptionsTest.php" line="153" assertions="2" time="0.020662"/>
     </testsuite>
-    <testsuite name="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" tests="5" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.152451">
-      <testcase name="it_generates_valid_attributes" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="14" assertions="2" time="0.022080"/>
-      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="25" assertions="3" time="0.046840"/>
-      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="41" assertions="1" time="0.018571"/>
-      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="51" assertions="1" time="0.035696"/>
-      <testcase name="it_generates_valid_attributes_when_model_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="66" assertions="1" time="0.029264"/>
+    <testsuite name="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" tests="5" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.122056">
+      <testcase name="it_generates_valid_attributes" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="14" assertions="2" time="0.022478"/>
+      <testcase name="it_generates_valid_attributes_when_the_model_does_not_have_the_attribute" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="25" assertions="3" time="0.036651"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="41" assertions="1" time="0.013835"/>
+      <testcase name="it_generates_valid_attributes_when_old_input_and_model_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="51" assertions="1" time="0.024820"/>
+      <testcase name="it_generates_valid_attributes_when_model_exists" class="TextTest" classname="TextTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\TextTest.php" line="66" assertions="1" time="0.024273"/>
     </testsuite>
-    <testsuite name="ValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ValueTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.036987">
-      <testcase name="value_method_returns_session_empty_values" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ValueTest.php" line="14" assertions="1" time="0.009703"/>
-      <testcase name="value_method_returns_model_empty_values" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ValueTest.php" line="26" assertions="1" time="0.020105"/>
-      <testcase name="value_method_returns_default_value" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ValueTest.php" line="41" assertions="1" time="0.007179"/>
+    <testsuite name="ValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ValueTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.032024">
+      <testcase name="value_method_returns_session_empty_values" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ValueTest.php" line="14" assertions="1" time="0.008975"/>
+      <testcase name="value_method_returns_model_empty_values" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ValueTest.php" line="26" assertions="1" time="0.015889"/>
+      <testcase name="value_method_returns_default_value" class="ValueTest" classname="ValueTest" file="C:\Users\Gebruiker\Documents\validation-helpers\tests\ValueTest.php" line="41" assertions="1" time="0.007160"/>
     </testsuite>
   </testsuite>
 </testsuites>
