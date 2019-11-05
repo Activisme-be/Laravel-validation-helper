@@ -12,20 +12,16 @@ use Illuminate\Session\Store;
  */
 class Form
 {
-    /**
-     * @var \Illuminate\Database\Eloquent\Model
-     */
+    /** @var Model $model */
     protected $model;
 
-    /**
-     * @var \Illuminate\Session\Store
-     */
+    /** @var Store $store*/
     protected $session;
 
     /**
      * Form constructor.
      *
-     * @param \Illuminate\Session\Store $session
+     * @param Store $session
      */
     public function __construct(Store $session)
     {
@@ -35,7 +31,7 @@ class Form
     /**
      * Set the model to use for the current form.
      *
-     * @param \Illuminate\Database\Eloquent\Model|null $model
+     * @param Model|null $model
      */
     public function model(Model $model = null)
     {
@@ -53,7 +49,7 @@ class Form
     {
         return e($this->value($name, $default));
     }
-    
+
     /**
      * Get the attributes for an input field.
      *
