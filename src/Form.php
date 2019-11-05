@@ -75,14 +75,11 @@ class Form
     public function checkbox($name, $inputValue = 1, $checkByDefault = false)
     {
         $value = $this->value($name);
+
         // Define the state for the checkbox, when $value is null then we
         // use the $checkByDefault value directly, otherwise the checkbox will
         // be checked only if the $value is equal to the $inputValue.
-        if (is_null($value)) {
-            $checked = $checkByDefault;
-        } else {
-            $checked = $value == $inputValue;
-        }
+        $checked = $value === null ? $checkByDefault : $value == $inputValue;
 
         $name = e($name);
         $inputValue = e($inputValue);
