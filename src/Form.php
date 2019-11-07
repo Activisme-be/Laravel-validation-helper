@@ -150,10 +150,12 @@ class Form
     public function error(string $name, ?string $template = null)
     {
         $errors = $this->session->get('errors');
+
         // Default template is bootstrap friendly.
         if ($template === null) {
             $template = config('form-helpers.error_template');
         }
+
         if ($errors && $errors->has($name)) {
             return str_replace(':message', e($errors->first($name)), $template);
         }
@@ -201,6 +203,7 @@ class Form
         if (! $this->model) {
             return null;
         }
+
         return $this->model->getAttribute($name);
     }
 }
