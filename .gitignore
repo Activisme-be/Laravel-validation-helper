@@ -7,3 +7,4 @@ composer.lock
 *.sublime-project
 *.sublime-workspace
 .phpunit.result.cache
+/build
