@@ -9,11 +9,8 @@ use Illuminate\Support\Facades\File;
  */
 class ConfigTest extends TestCase
 {
-    /**
-     * @test
-     * @testdox Config file is published
-     */
-    public function config_file_is_published(): void
+    /** @testdox Config file is published. */
+    public function test_config_file_is_published(): void
     {
         $configFile = __DIR__.'/../vendor/laravel/laravel/config/form-helpers.php';
         File::delete($configFile);
