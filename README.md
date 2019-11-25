@@ -70,6 +70,8 @@ php artisan vendor:publish --provider=ActivismeBE\FormHelper\FormServiceProvider
 
 After that you can edit the `config/form-helpers.php` file.
 
+**NOTE:** This step is only needed when your app is below version 5.5
+
 
 Usage
 -----
