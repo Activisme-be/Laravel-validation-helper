@@ -7,6 +7,14 @@ model, it also helps you to display
 [validation error messages](https://laravel.com/docs/5.5/validation#working-with-error-messages)
 in a clean and easy way.
 
+
+## Table of contents 
+
+- [Example](#example)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+    
 ## Example
 See how easy is to do cool stuff with these directives, for example
 if you are using [Bootstrap](https://getbootstrap.com) for your markup, you can do something like this:
@@ -40,8 +48,7 @@ the result will be:
 
 ¡It's _awesame_!
 
-Installation
-------------
+## Installation
 
 Install with composer, just run the command:
 
@@ -59,8 +66,7 @@ Then add the service provider to your `config/app.php` file:
 
 That's all.
 
-Configuration
--------------
+## Configuration
 
 Optionally you can publish the configuration file with this command:
 
@@ -73,8 +79,7 @@ After that you can edit the `config/form-helpers.php` file.
 **NOTE:** This step is only needed when your app is below version 5.5
 
 
-Usage
------
+## Usage
 
 ### @form
 
