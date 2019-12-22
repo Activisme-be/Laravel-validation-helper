@@ -13,6 +13,8 @@ class TestCase extends BaseTestCase
     {
         parent::setUp();
 
+        config()->set('session.driver', 'file');
+
         app('Activisme_BE')->model(null);   // Unbind the model before each test
         $this->session(['errors' => null]);         // Remove errors before each test
     }
