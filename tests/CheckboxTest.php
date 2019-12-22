@@ -7,22 +7,16 @@ use Illuminate\Database\Eloquent\Model;
  */
 class CheckboxTest extends TestCase
 {
-    /**
-     * @test
-     * @testdox It generates valid attributes
-     */
-    public function it_generates_valid_attributes(): void
+    /** @testdox It generates valid attributes */
+    public function test_it_generates_valid_attributes(): void
     {
         $this->assertBladeRender('name="accept" value="1"', "@checkbox('accept')");
         $this->assertBladeRender('name="accept" value="ok"', "@checkbox('accept', 'ok')");
         $this->assertBladeRender('name="accept" value="1" checked', "@checkbox('accept', 1, true)");
     }
 
-    /**
-     * @test
-     * @testdox It generates valid attributes when the model does not have the attribute
-     */
-    public function it_generates_valid_attributes_when_the_model_does_not_have_the_attribute(): void
+    /** @testdox It generates valid attributes when the model does not have the attribute */
+    public function test_it_generates_valid_attributes_when_the_model_does_not_have_the_attribute(): void
     {
         $model = $this->prophesize(Model::class);
         $model->getAttribute('accept')->willReturn(null);
@@ -33,11 +27,8 @@ class CheckboxTest extends TestCase
         $this->assertBladeRender('name="accept" value="ok"', '@form($model) @checkbox("accept", "ok")', $viewData);
     }
 
-    /**
-     * @test
-     * @testdox It generates valid attributes when old input exists
-     */
-    public function it_generates_valid_attributes_when_old_input_exists(): void
+    /** @testdox It generates valid attributes when old input exists. */
+    public function test_it_generates_valid_attributes_when_old_input_exists(): void
     {
         $this->session(['_old_input' => ['accept' => '1', 'accept2' => 'not_ok']]);
 
@@ -45,11 +36,8 @@ class CheckboxTest extends TestCase
         $this->assertBladeRender('name="accept2" value="ok"', "@checkbox('accept2', 'ok')");
     }
 
-    /**
-     * @test
-     * @testdox It generates valid attributes when old input and model exists
-     */
-    public function it_generates_valid_attributes_when_old_input_and_model_exists(): void
+    /** @testdox It generates valid attributes when old input and model exists. */
+    public function test_it_generates_valid_attributes_when_old_input_and_model_exists(): void
     {
         $model = $this->prophesize(Model::class);
         $model->getAttribute('accept')->willReturn(null);
@@ -61,11 +49,8 @@ class CheckboxTest extends TestCase
         $this->assertBladeRender('name="accept" value="1" checked', '@form($model) @checkbox("accept")', $viewData);
     }
 
-    /**
-     * @test
-     * @testdox It generates valid attributes when model exists
-     */
-    public function it_generates_valid_attributes_when_model_exists(): void
+    /** @testdox It generates valid attributes when model exists. */
+    public function test_it_generates_valid_attributes_when_model_exists(): void
     {
         $model = $this->prophesize(Model::class);
         $model->getAttribute('accept')->willReturn(1);

@@ -1,34 +1,25 @@
 <?php
 
 use ActivismeBE\FormHelper\FormServiceProvider;
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\ViewErrorBag;
 
-/**
- * Class TestCase
- */
-class TestCase extends \Illuminate\Foundation\Testing\TestCase
+class TestCase extends BaseTestCase
 {
-    /**
-     * Setup the test environment
-     *
-     * @return void
-     */
     protected function setUp(): void
     {
         parent::setUp();
 
+        config()->set('session.driver', 'file');
+
         app('Activisme_BE')->model(null);   // Unbind the model before each test
-        $this->session(['errors' => null]); // Remove errors before each test
+        $this->session(['errors' => null]);         // Remove errors before each test
     }
 
-    /**
-     * Creates the application.
-     *
-     * @return \Illuminate\Foundation\Application
-     */
-    public function createApplication()
+    public function createApplication(): Application
     {
         $app = require __DIR__.'/../vendor/laravel/laravel/bootstrap/app.php';
         $app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
@@ -37,31 +28,16 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
         return $app;
     }
 
-    /**
-     * Assert that a blade string is rendered correctly.
-     *
-     * @param  string $render
-     * @param  string $string
-     * @param  array  $data
-     * @return $this
-     */
-    protected function assertBladeRender($render, $string, $data = [])
+    protected function assertBladeRender(string $render, string $string, array $data = []): self
     {
-        $path = __DIR__."/views/test.blade.php";
+        $path = __DIR__. '/views/test.blade.php';
         File::put($path, $string);
         $this->assertEquals($render, view()->file($path, $data)->render());
 
         return $this;
     }
 
-    /**
-     * Push an error into the session.
-     *
-     * @param  string $field
-     * @param  string $message
-     * @return $this
-     */
-    protected function withError($field, $message)
+    protected function withError(string $field, string $message): self
     {
         $errors = new ViewErrorBag();
         $errors->put('default', new MessageBag([$field => [$message]]));
