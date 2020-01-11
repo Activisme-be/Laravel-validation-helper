@@ -301,3 +301,15 @@ And in the case the user is redirected back with errors, the result will be:
     <div class="help-block">Error message</div>
 </div>
 ```
+
+## Extending PhpStorm
+
+For letting PhpStorm the custom blade directives of this package. Following the following steps. And add what u need. 
+
+1. In PhpStorm open Preferences, and navigate to **Languages and Frameworks -> PHP -> Blade** (File | Settings | Languages & Frameworks | PHP | Blade)
+2. Uncheck "Use default settings", then click on the `Directives` tab. 
+3. Add the follwoing new directives for the validation-helpers package:
+
+| name            | has parameter | Prefix                                         | Suffix                     |
+| :-------------- | :------------ | :--------------------------------------------- | :------------------------- |
+| **@form**       | `YES`         | `<?php echo app('Activisme_BE')->model(`       | `); ?>`                    |
