@@ -14,13 +14,6 @@ in a clean and easy way.
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-    - [@form](#@form)
-    - [@input](#@input)
-    - [@text](#@text)
-    - [@checkout](#@checkout)
-    - [@radio](#@radio)
-    - [@options](#@options) 
-    - [@error](#@error)
     
 ## Example
 See how easy is to do cool stuff with these directives, for example
