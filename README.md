@@ -14,6 +14,7 @@ in a clean and easy way.
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
+- [Extended PhpStorm](#extending-phpstorm)
     
 ## Example
 See how easy is to do cool stuff with these directives, for example
@@ -301,3 +302,24 @@ And in the case the user is redirected back with errors, the result will be:
     <div class="help-block">Error message</div>
 </div>
 ```
+
+## Extending PhpStorm
+
+For letting PhpStorm use the custom blade directives of this package. Following the following steps. And add what u need. 
+
+1. In PhpStorm open Preferences, and navigate to **Languages and Frameworks -> PHP -> Blade** (File | Settings | Languages & Frameworks | PHP | Blade)
+2. Uncheck "Use default settings", then click on the `Directives` tab. 
+3. Add the follwoing new directives for the validation-helpers package:
+
+<br>
+
+| name            | has parameter | Prefix                                         | Suffix                     |
+| :-------------- | :------------ | :--------------------------------------------- | :------------------------- |
+| **@form**       | `YES`         | `<?php echo app('Activisme_BE')->model(`       | `); ?>`                    |
+| **@input**      | `YES`         | `<?php echo app('Activisme_BE')->input(`       | `); ?>`                    |
+| **@text**       | `YES`         | `<?php echo app('Activisme_BE')->text(`        | `); ?>`                    |
+| **@checkbox**   | `YES`         | `<?php echo app('Activisme_BE')->checkbox(`    | `); ?>`                    |
+| **@radio**      | `YES`         | `<?php echo app('Activisme_BE')->radio(`       | `); ?>`                    |
+| **@options**    | `YES`         | `<?php echo app('Activisme_BE')->options(`     | `); ?>`                    |
+| **@error**      | `YES`         | `<?php echo app('Activisme_BE')->error(`       | `); ?>`                    |
+ 
