@@ -95,7 +95,7 @@ and no the model binding.
 </form>
 ```
     
-###@input
+### @input
 
 `@input(string $attribute [, string $default = null ])`
 
@@ -309,6 +309,8 @@ For letting PhpStorm the custom blade directives of this package. Following the 
 1. In PhpStorm open Preferences, and navigate to **Languages and Frameworks -> PHP -> Blade** (File | Settings | Languages & Frameworks | PHP | Blade)
 2. Uncheck "Use default settings", then click on the `Directives` tab. 
 3. Add the follwoing new directives for the validation-helpers package:
+
+<br>
 
 | name            | has parameter | Prefix                                         | Suffix                     |
 | :-------------- | :------------ | :--------------------------------------------- | :------------------------- |
