@@ -17,3 +17,9 @@ jobs:
 
       - name: Run PHPUnit (PHP 7.3)
         run: php7.3 vendor/bin/phpunit
+
+      - name: Run PHP-cs-fixer
+        run: php7.4 vendor/bin/php-cs-fixer fix
+
+      - name: Check for security vulnabilities
+        run: vendor/bin/security-checker security:check
