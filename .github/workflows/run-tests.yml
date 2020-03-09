@@ -1,13 +1,8 @@
-name: CI/CD
+workflow "PHPUnit testing" {
+    on = "push"
+    resolves = ["PHPUnit Action"]
+}
 
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v1
-      - name: test
-        run: vendor/bin/phpunit
+action "PHPUnit Action" {
+    uses = "linuxjuggler/phpunit-action@master"
+}
