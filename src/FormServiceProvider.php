@@ -3,8 +3,8 @@
 namespace ActivismeBE\FormHelper;
 
 use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\Str;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 
 /**
  * Class FormServiceProvider
