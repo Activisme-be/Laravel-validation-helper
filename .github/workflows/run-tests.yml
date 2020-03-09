@@ -20,13 +20,3 @@ jobs:
 
       - name: Run PHPUnit (PHP 7.3)
         run: php7.3 vendor/bin/phpunit
-
-      - name: Run php-cs-fixer
-        run: ./vendor/bin/php-cs-fixer fix
-
-      - uses: stefanzweifel/git-auto-commit-action@v2.1.0
-        with:
-          commit_message: Apply php-cs-fixer changes
-          branch: ${{ github.head_ref }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
