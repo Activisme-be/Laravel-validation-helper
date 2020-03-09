@@ -9,6 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name Install composer parallel install
+      -
+
       - name: Install composer dependencies
         run: composer install --prefer-dist
 
@@ -18,8 +21,5 @@ jobs:
       - name: Run PHPUnit (PHP 7.3)
         run: php7.3 vendor/bin/phpunit
 
-      - name: Run PHP-cs-fixer
-        run: php7.4 vendor/bin/php-cs-fixer fix
-
-      - name: Check for security vulnabilities
-        run: vendor/bin/security-checker security:check
+      - name: php-cs-fixer default
+        uses: prestashopcorp/php-cs-fixer-action@master
