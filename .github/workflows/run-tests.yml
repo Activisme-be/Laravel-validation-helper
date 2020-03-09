@@ -9,9 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name Install composer parallel install
-      -
-
       - name: Install composer dependencies
         run: composer install --prefer-dist
 
