@@ -1,6 +1,6 @@
 name: CI
 
-on: [push]
+on: [pull_request]
 
 jobs:
   PHPunit:
@@ -30,6 +30,6 @@ jobs:
         - uses: stefanzweifel/git-auto-commit-action@v2.1.0
           with:
             commit_message: Apply php-cs-fixer changes
-            branch: ${{ github.ref }}
+            branch: ${{ github.head_ref }}
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}x
